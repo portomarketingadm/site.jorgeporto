@@ -119,7 +119,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "w-full border border-ink/20 bg-paper px-4 py-3.5 text-sm text-ink placeholder:text-ink/40 outline-none transition-colors focus:border-gold-deep";
+    "w-full border border-ink/20 bg-paper px-4 py-3.5 text-base text-ink placeholder:text-ink/40 outline-none transition-colors focus:border-gold-deep";
   const errorClass = "mt-1.5 text-xs text-red-700";
 
   return (

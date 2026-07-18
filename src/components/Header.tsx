@@ -33,12 +33,12 @@ export function Header() {
       <div className="container-page flex h-20 items-center justify-between md:h-24">
         <a
           href="#inicio"
-          className="font-display text-xl tracking-tight text-paper md:text-2xl"
+          className="-my-2 flex items-center py-2 font-display text-xl tracking-tight text-paper md:text-2xl"
         >
           Jorge Porto
         </a>
 
-        <nav className="hidden items-center gap-9 lg:flex">
+        <nav className="hidden items-center gap-9 xl:flex">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}
@@ -50,7 +50,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <a
             href={CONTACT.whatsappUrl}
             target="_blank"
@@ -66,7 +66,7 @@ export function Header() {
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+          className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 xl:hidden"
         >
           <motion.span
             animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 6 : 0 }}
@@ -90,7 +90,7 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 top-20 z-40 flex flex-col bg-ink lg:hidden"
+            className="fixed inset-0 top-20 z-40 flex flex-col bg-ink xl:hidden"
           >
             <nav className="container-page flex flex-1 flex-col justify-center gap-2 py-10">
               {NAV_ITEMS.map((item, i) => (

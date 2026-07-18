@@ -29,11 +29,11 @@ export function Footer() {
 
           <div>
             <p className="eyebrow mb-4">Contatos</p>
-            <ul className="space-y-2 text-sm text-mist">
+            <ul className="-my-2 text-sm text-mist">
               <li>
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="transition-colors hover:text-paper"
+                  className="block py-3.5 transition-colors hover:text-paper"
                 >
                   {CONTACT.email}
                 </a>
@@ -43,7 +43,7 @@ export function Footer() {
                   href={CONTACT.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-paper"
+                  className="block py-3.5 transition-colors hover:text-paper"
                 >
                   WhatsApp: {CONTACT.phoneSecondaryDisplay}
                 </a>
@@ -51,7 +51,7 @@ export function Footer() {
               <li>
                 <a
                   href={`tel:${CONTACT.phonePrimaryTel}`}
-                  className="transition-colors hover:text-paper"
+                  className="block py-3.5 transition-colors hover:text-paper"
                 >
                   Telefone: {CONTACT.phonePrimaryDisplay}
                 </a>
@@ -61,7 +61,7 @@ export function Footer() {
                   href={CONTACT.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-paper"
+                  className="block py-3.5 transition-colors hover:text-paper"
                 >
                   Instagram: {CONTACT.instagramHandle}
                 </a>
@@ -71,19 +71,19 @@ export function Footer() {
 
           <div>
             <p className="eyebrow mb-4">Links</p>
-            <ul className="space-y-2 text-sm text-mist">
+            <ul className="-my-2 text-sm text-mist">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="transition-colors hover:text-paper"
+                    className="block py-3.5 transition-colors hover:text-paper"
                   >
                     {item.label}
                   </a>
                 </li>
               ))}
-              <li className="text-mist-dark">Política de Privacidade</li>
-              <li className="text-mist-dark">Termos de Uso</li>
+              <li className="py-3.5 text-mist-dark">Política de Privacidade</li>
+              <li className="py-3.5 text-mist-dark">Termos de Uso</li>
             </ul>
           </div>
         </div>

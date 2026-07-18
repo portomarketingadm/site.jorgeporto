@@ -15,7 +15,7 @@ export function Numbers() {
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-ink/90"
+        className="pointer-events-none absolute inset-0 bg-ink/95"
       />
       <div
         aria-hidden="true"
