@@ -21,7 +21,10 @@ export function AnimatedCounter({
   className,
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  // A generous, expanding margin (not a shrinking one) so the trigger
+  // zone is far larger than the viewport itself — a fast mobile scroll
+  // flick can't jump clean over it and leave the counter stuck at 0.
+  const isInView = useInView(ref, { once: true, margin: "200px 0px" });
   const [display, setDisplay] = useState(() =>
     formatNumber(0, decimals)
   );
